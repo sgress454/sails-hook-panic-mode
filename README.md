@@ -36,7 +36,7 @@ module.exports = {
   }
 }
 
-// [your-sails-app]/config/socket.js
+// [your-sails-app]/config/sockets.js
 module.exports = {
   adapter: 'socket.io-redis',
   adapterOptions: {
