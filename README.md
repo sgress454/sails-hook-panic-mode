@@ -1,6 +1,6 @@
 # sails-hook-panic-mode
 
-[Sails JS](http://sailsjs.org) hook to provide a simple "panic mode" for an app.  In maintenance mode, all requests receive an "under maintenance" page or message in response.
+[Sails JS](http://sailsjs.org) hook to provide a simple "panic mode" for an app.  In panic mode, all requests receive an "under maintenance" page or message in response.
 
 ### Installation
 
