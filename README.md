@@ -8,7 +8,7 @@
 
 ### Usage
 
-From within your Sails app, call `sails.hooks['panic-mode'].panic()` to increase the panic level.  Call `sails.hooks['panic-mode'].chill()` to decrease the panic level.  Whenever the panic level is > 1, the site will operate in panic mode, so if you call `panic()` multiple times, you'll need to call `chill()` an equal number of times to get the site out of panic mode.  Call `sails.hooks['panic-mode'].reset()` to instantly set the panic level to zero.
+From within your Sails app, call `sails.hooks['panic-mode'].panic()` to increase the panic level.  Call `sails.hooks['panic-mode'].chill()` to decrease the panic level.  Whenever the panic level is > 0, the site will operate in panic mode, so if you call `panic()` multiple times, you'll need to call `chill()` an equal number of times to get the site out of panic mode.  Call `sails.hooks['panic-mode'].reset()` to instantly set the panic level to zero.
 
 ### Configuration
 
