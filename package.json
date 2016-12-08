@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-panic-mode",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Sails JS hook to supply a simple panic mode for sites.",
   "main": "index.js",
   "scripts": {
