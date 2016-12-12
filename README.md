@@ -22,16 +22,16 @@ text_message | ((string)) | _none_ | If `view` is set to `false` and `text_messa
 
 #### Example
 
-A great use of panic mode is to handle temporary disconnections from a remote session or socket store in Sails v1+.  
+A great use of panic mode is to handle temporary disconnections from a Redis session or socket store in Sails v1+.  
 
 ```javascript
 // [your-sails-app]/config/session.js
 module.exports = {
   adapter: 'connect-redis',
-  onDisconnect: function() {
+  onRedisDisconnect: function() {
     sails.hooks['panic-mode'].panic();
   },
-  onReconnect: function() {
+  onRedisReconnect: function() {
     sails.hooks['panic-mode'].chill();
   }
 }
@@ -40,10 +40,10 @@ module.exports = {
 module.exports = {
   adapter: 'socket.io-redis',
   adapterOptions: {
-    onDisconnect: function() {
+    onRedisDisconnect: function() {
       sails.hooks['panic-mode'].panic();
     },
-    onReconnect: function() {
+    onRedisReconnect: function() {
       sails.hooks['panic-mode'].chill();
     }
   }
